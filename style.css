@@ -1,0 +1,129 @@
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  max-width: 516px;
+  display: flex;
+  justify-content: center;
+  -ms-user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
+}
+
+.left {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125px;
+  min-width: 512px;
+  border: 3px solid #ff9e81;
+}
+
+.top p {
+  text-align: right;
+}
+
+#calculation {
+  font-size: 22px;
+}
+
+#answer {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.button {
+  cursor: pointer;
+  margin: 2px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 125px;
+  background-color: #ffdfd4;
+}
+
+.button:hover {
+  background-color: #ff9e81;
+}
+
+.button:active {
+  background-color: #ff0000;
+}
+
+#equal {
+  height: 254px;
+}
+
+#n0 {
+  width: 254px;
+}
+
+@media (max-width: 516px) {
+  .buttons {
+    max-width: 100vw;
+  }
+
+  .button {
+    width: 25vw;
+    height: 25vw;
+    margin: 0;
+    border: 1px solid white;
+    font-size: 30px;
+  }
+
+  #equal {
+    height: 50vw;
+  }
+
+  #n0 {
+    width: 50vw;
+  }
+
+  .top {
+    height: 100px;
+    min-width: 100vw;
+  }
+
+  #calculation {
+    font-size: 18px;
+  }
+
+  #answer {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
